@@ -1,10 +1,43 @@
-
-
+body {
+    background-color: rgb(235, 231, 231);
+    font-family: monospace;
+}
+#titulo {
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+}
 #container {
-    width: 320px;
-    height: 320px;
+    margin: auto;
+    max-width: 60vh;
+    height: 60vh;
     display: grid;
-    border: 1px solid black;
+    border: 5px solid black;
+    box-shadow: 50px, 50px;
+}
+#customGrid {
+    margin: 10px;
+    border: 2px solid black;
+    font-family: monospace;
+    box-shadow: 5px;
+}
+#customGrid:hover {
+        background-color:#d8d8d8;
+        box-shadow: rgb(221, 221, 221);
+}
+#randomColor {
+    margin: 10px;
+    border: 2px solid black;
+    font-family: monospace;
+    box-shadow: 5px;    
+}
+#randomColor:hover {
+        background-color:#d8d8d8;
+        box-shadow: rgb(221, 221, 221);
+}
+#botones {
+    text-align:center;
+    margin: 10px;
 }
 .gridRow {
     display: flex;
@@ -14,9 +47,9 @@
     height: 100%;
     background: rgb(0, 0, 0);
     opacity: 0;
-    transition: opacity 5s ease 3s, transform 1.2s;
+    transition: opacity 8s ease 5s, transform 1.2s;
 }
 .cell:hover {
-    opacity: 0.7;
+    opacity: 1;
     transition: opacity 0.2s ease;
 }
