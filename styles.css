@@ -47,7 +47,7 @@ body {
     height: 100%;
     background: rgb(0, 0, 0);
     opacity: 0;
-    transition: opacity 8s ease 5s, transform 1.2s;
+    transition: opacity 10s ease 8s, transform 1.2s;
 }
 .cell:hover {
     opacity: 1;
