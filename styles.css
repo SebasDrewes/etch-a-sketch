@@ -66,6 +66,16 @@ body {
         background-color:#d8d8d8;
         box-shadow: rgb(221, 221, 221);
 }
+#reset {
+    margin: 10px;
+    border: 2px solid black;
+    font-family: monospace;
+    box-shadow: 5px;    
+}
+#reset:hover {
+        background-color:#d8d8d8;
+        box-shadow: rgb(221, 221, 221);
+}
 
 #botones {
     text-align:center;

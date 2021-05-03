@@ -54,6 +54,13 @@ customGrid.addEventListener('click', () => {
         cells[i].addEventListener("mouseover", () => {
         cells[i].style.background = "black";
 })}});
+reset.addEventListener('click', () => {
+    for (let i = 0; i < cells.length; i++){
+        cells[i].style.background = "rgb(235, 231, 231)";}
+    for (let i = 0; i < cells.length; i++){
+        cells[i].addEventListener("mouseover", () => {
+        cells[i].style.background = "black";
+})}});
 //randomColor.addEventListener('click', () => {
 //   newColor = getRandomColor();
 //    for(let i = 0; i < cell.length; ++i) {
