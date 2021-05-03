@@ -3,13 +3,13 @@ let rows = document.getElementsByClassName("gridRow");
 let cells = document.getElementsByClassName("cell");
 const customGrid = document.getElementById('customGrid');
 
-defaultGrid(16);
+defaultGrid(32);
 
 function defaultGrid(squares) {
-    if (squares > 64) {
-        alert("No mas de 64 cuadrados por lado");
-        makeRows(16);
-        makeColumns(16);
+    if (squares > 100) {
+        alert("No mas de 100 cuadrados por lado");
+        makeRows(32);
+        makeColumns(32);
     }
     else {
     makeRows(squares);
@@ -49,7 +49,7 @@ function removeAllChildNodes(parent) {
 
 customGrid.addEventListener('click', () => {
     removeAllChildNodes(container)
-    defaultGrid(prompt("Cuadrados por lado (no mas de 64)", 16))
+    defaultGrid(prompt("Cuadrados por lado (no mas de 100)", 32))
     for (let i = 0; i < cells.length; i++){
         cells[i].addEventListener("mouseover", () => {
         cells[i].style.background = "black";
