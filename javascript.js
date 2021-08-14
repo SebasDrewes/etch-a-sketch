@@ -61,11 +61,6 @@ reset.addEventListener('click', () => {
         cells[i].addEventListener("mouseover", () => {
         cells[i].style.background = "black";
 })}});
-//randomColor.addEventListener('click', () => {
-//   newColor = getRandomColor();
-//    for(let i = 0; i < cell.length; ++i) {
-//    cell[i].style.background = newColor;
-//}});
 randomColor.addEventListener('click', () => {
 newColor = getRandomColor();
 for (let i = 0; i < cells.length; i++){
@@ -91,3 +86,11 @@ for (let i = 0; i < cells.length; i++){
 cells[i].addEventListener("mouseover", () => {
 cells[i].style.background = "rgb(235, 231, 231)";
 })}});
+
+const chooseColor = document.querySelector("#chooseColor")
+chooseColor.addEventListener('click', () => {
+for (let i = 0; i < cells.length; i++){
+cells[i].addEventListener("mouseover", () => {
+cells[i].style.background = chooseColor.value;
+})}});
+
